@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    
+    "start": "nodemon -exec babel-node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "nodemon": "^2.0.22"
+  }
+}
