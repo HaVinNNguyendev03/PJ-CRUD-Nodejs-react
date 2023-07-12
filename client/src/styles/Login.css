@@ -1,0 +1,19 @@
+.bg-color{
+  background-color:  aliceblue;
+}
+.form-control{
+  border: none;
+  border-radius: 0;
+}
+ input{
+  border-bottom: 1px solid rgb(73, 116, 185) !important;
+}
+.text-left{
+  text-align: left;
+}
+.form-control:focus{
+  outline: 0;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  box-shadow: none;
+}

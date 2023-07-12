@@ -1,20 +1,25 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-// import { Link } from 'react-router-dom';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.min.js';
+import './styles/App.css';
+import { Routes,Route,BrowserRouter } from 'react-router-dom';
+import Feed from './Pages/Feed'
+import  Home  from './Pages/Home';
+import Login from './Pages/Login'
+import Profile from './Pages/Profile'
+import Register from './Pages/Register'
+import Notifications from './Pages/Notifications';
 function App() {
   return (
     <div className="App">
-        <div className='app-header'>
-        <Header />
-      </div>
-      <div className='app-content'>
-        <Outlet />
-        {/* app content */}
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='' element={<Home/>}></Route>
+          <Route path='/Feed' element={<Feed/>}></Route>
+          <Route path='/Login' element={<Login/>}></Route>
+          <Route path='/Profile' element={<Profile/>}></Route>
+          <Route path='/Register' element={<Register/>}></Route>
+          <Route path='/Notifications' element={<Notifications/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
